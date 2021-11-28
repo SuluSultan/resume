@@ -1,0 +1,65 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "about1 experience1 experience1"
+    "about1 experience1 experience1"
+    "about1 education1 education1"
+    "about1 education1 education1"
+    "footer1 footer1 footer1";
+  grid-gap: 15px;
+
+}
+
+.about {
+  grid-area: about1;
+}
+
+.experience {
+  grid-area: experience1;
+  background-color: royalblue;
+}
+
+.education {
+  grid-area: education1;
+}
+
+.footer {
+  grid-area: footer1;
+  background-color: rgb(25, 148, 185);
+}
+
+.far,
+.fas {
+  color: skyblue;
+}
+
+.current {
+  background-color: rgb(41, 187, 206);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.dates {
+  color: lightseagreen;
+}
+.footer {
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  margin-top: -82px;
+  height: 120px;
+}
+.list li {
+  list-style: none;
+}
+.list a {
+  text-decoration: none;
+}
+.footer i {
+  padding: 5px;
+}
